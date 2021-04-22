@@ -1,7 +1,9 @@
 import React from 'react'
+import padButtonImage from '../padbutton.png'
+import '../styles/PadButton.css'
 
 const PadButton = () => {
-  return <h1>PadButton</h1>
+    return <button className="padbutton-button"><img src={padButtonImage} />
 }
 
 export default PadButton

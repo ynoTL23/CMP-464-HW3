@@ -1,9 +1,12 @@
 import React from 'react'
-import './App.css'
 
 import Header from './components/Header'
 import PadInput from './components/PadInput'
+import PadButton from './components/PadButton'
 import DesignBoard from './components/DesignBoard'
+    
+import './App.css'
+import './styles/style.css'    
 
 function App() {
   return (
@@ -12,6 +15,14 @@ function App() {
       <Header />
       <PadInput />
       <DesignBoard />
+      <div className='flex-container flex-column' id="pad-container">
+        <div className='flex-container flex-wrap' id="pad-buttons">
+          <PadButton />
+          <PadButton />
+          <PadButton />
+          <PadButton />
+        </div>
+      </div>
     </div>
   )
 }
