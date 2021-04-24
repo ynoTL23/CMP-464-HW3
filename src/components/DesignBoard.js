@@ -1,7 +1,15 @@
 import React from 'react'
-
+import '../styles/boardstyle.css'
+import PadButton from "./PadButton";
 const DesignBoard = () => {
-  return <h1>DesignBoard</h1>
+  return <>
+      <div className='flex-container flex-wrap' id="pad-buttons">
+          <PadButton />
+          <PadButton />
+          <PadButton />
+          <PadButton />
+      </div>
+  </>
 }
 
 export default DesignBoard
