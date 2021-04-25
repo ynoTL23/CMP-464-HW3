@@ -1,3 +1,14 @@
-.padbutton-button {
-  border: none;
+.PadButton {
+  width: 160px;
+  height: 90px;
+
+  background-color: #ccc;
+  border: 2px solid black;
+
+  display: grid;
+  place-items: center;
+}
+
+.PadButton-text {
+  font-size: 32px;
 }

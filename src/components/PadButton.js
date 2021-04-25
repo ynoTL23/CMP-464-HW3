@@ -1,12 +1,12 @@
 import React from 'react'
-import padButtonImage from '../padbutton.png'
 import '../styles/PadButton.css'
 
-const PadButton = () => {
-
-    return <>
-                <button className="padbutton-button"><img src={padButtonImage}/></button>
-    </>
+const PadButton = props => {
+  return (
+    <div className='PadButton'>
+      <div className='PadButton-text'>{props.text}</div>
+    </div>
+  )
 }
 
 export default PadButton
