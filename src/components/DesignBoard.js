@@ -1,9 +1,12 @@
 import React from 'react'
 import DesignPad from './DesignPad'
 import '../styles/DesignBoard.css'
+
 const DesignBoard = () => {
   return (
-    <div className='flex-container flex-wrap' id='pad-buttons'>
+    <div className='designboard-container'>
+      <DesignPad />
+      <DesignPad />
       <DesignPad />
       <DesignPad />
       <DesignPad />
