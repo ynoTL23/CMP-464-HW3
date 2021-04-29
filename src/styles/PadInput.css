@@ -1,3 +1,7 @@
+.PadInput-Container {
+  display: flex;
+}
+
 .PadInput {
   padding: 1rem;
   width: 20vw;
