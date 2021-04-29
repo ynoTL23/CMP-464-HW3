@@ -1,13 +1,34 @@
 import React from 'react'
-import DesignPadImage from '../assets/designpad.png'
 import '../styles/DesignPad.css'
 
-const DesignPad = () => {
-  return (
-    <button className='designpad-button'>
-      <img src={DesignPadImage} />
-    </button>
-  )
+class DesignPad extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      bgColor: 'grey'
+    }
+  }
+
+  allowDrop = e => {
+    e.preventDefault()
+  }
+
+  drop = e => {
+    e.preventDefault()
+    const newColor = e.dataTransfer.getData('bgColor')
+    this.setState({ bgColor: newColor })
+  }
+
+  render() {
+    return (
+      <div
+        className='designpad-button'
+        style={{ backgroundColor: this.state.bgColor }}
+        onDragOver={this.allowDrop}
+        onDrop={this.drop}></div>
+    )
+  }
 }
 
 export default DesignPad

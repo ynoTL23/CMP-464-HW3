@@ -1,5 +1,4 @@
 .designboard-container {
-  padding: 2rem;
   grid-column: 2 / 3;
 
   display: flex;

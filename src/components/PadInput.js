@@ -2,15 +2,14 @@ import React from 'react'
 import PadButton from './PadButton'
 import '../styles/PadInput.css'
 
+const colors = ['red', 'green', 'grey', 'purple', 'pink', 'lime']
+
 const PadInput = () => {
   return (
     <div className='PadInput'>
-      <PadButton text='1' />
-      <PadButton text='2' />
-      <PadButton text='3' />
-      <PadButton text='4' />
-      <PadButton text='5' />
-      <PadButton text='6' />
+      {colors.map((color, idx) => (
+        <PadButton text={idx + 1} bgColor={color} />
+      ))}
     </div>
   )
 }
